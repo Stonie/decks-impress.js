@@ -1,0 +1,76 @@
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    min-height: 800px;
+}
+p{
+  text-align: center;
+}
+
+img {
+    padding: 40px;
+
+}
+
+.step {
+    position: relative;
+    width: 1280px;
+    padding: 40px;
+    margin: 20px auto;
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+/*
+    Basically we remove the margin and make inactive steps a little bit transparent.
+*/
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+.slide {
+    display: block;
+
+    width: 1280px;
+    height: 800px;
+    padding: 40px 60px;
+
+    background-color: white;
+
+    color: rgb(102, 102, 102);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+
+.slide q {
+    display: block;
+    font-size: 32px;
+    line-height: 64px;
+}
+
+.slide q strong {
+    white-space: nowrap;
+}
+
+.footnote {
+    font-size: 16px;
+    color: #006400;
+}
+
+.slide li {
+    font-size: 24px;
+}
