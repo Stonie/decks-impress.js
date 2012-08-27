@@ -27,7 +27,7 @@ img {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.1;
+    opacity: 0.05;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -60,6 +60,7 @@ img {
     display: block;
     font-size: 32px;
     line-height: 64px;
+    font-style: italic;
 }
 
 .slide q strong {
@@ -79,4 +80,25 @@ img {
     text-align:left;
 
 
+}
+
+#badge {
+    -moz-transition: opacity 0.5s ease 0s;
+    opacity: 0.3;
+    position: fixed;
+}
+
+#badge {
+    background: url("../img/OzBerryPi_small.png") repeat scroll 0 0 transparent;
+    bottom: 10px;
+    height: 205px;
+    right: 10px;
+    width: 160px;
+}
+
+em{
+    color: #006400;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
 }

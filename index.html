@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=1280"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <title>impress.js | OzBerryPi - Sydney's Raspberry Jam</title>
+    <title>impress.js |RPi @ Sydney Alt.Net - August 2012</title>
     <meta name="description"
           content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com."/>
     <meta name="author" content="Andrew Stone"/>
@@ -19,9 +19,9 @@
 <div id="impress">
 
     <div class="step slide" data-x="-2000" data-y="-2500">
-        <p><img src="img/OzBerryPi.png"></p>
-
-        <p>Welcome to Sydney's first Raspberry Pi User Group </br>August 2012</p>
+        <p><img src="img/Alt.net.png"></p>
+        <p><strong>.Net on a $35 ARM system</strong></p>
+        <p>Sydney Alt.Net </br>August 2012</p>
     </div>
 
     <div class="step slide" data-x="-1000" data-y="-1500">
@@ -48,6 +48,8 @@
         <p style="padding: 150px;">
 
         <h2>Almost... The Broadcom micro is still closed :( </h2>
+        
+        However datasheet has been published: <a href="http://elinux.org/BCM2835_datasheet_errata">http://elinux.org/BCM2835_datasheet_errata</a>
         </p>
     </div>
 
@@ -81,49 +83,40 @@
 
     <div class="step slide" data-x="0" data-y="0" data-rotate="90">
         <img src="img/beagleboard.jpg">
-
         <p>Beagle board - $173 - ARM @ 600MHz, HD-video</p>
     </div>
-
-    <div class="step slide" data-x="500" data-y="0" data-rotate="90">
-        <img src="img/etherten.jpg">
-
-        <p>EtherTen 100% Arduino compatible - $70 - ATmega328P @ 16MHz </p>
-    </div>
-
     <div class="step slide" data-x="1000" data-y="0" data-rotate="90">
+        <img src="img/uno.jpg">
+        <p>Arduino Uno - $32 - ATmega328 @ 16MHz </p>
+    </div>
+    <div class="step slide" data-x="1500" data-y="0" data-rotate="90">
         <img src="img/Netduino.jpg">
 
         <p>Netduino Plus with ethernet - $73 - ARM 7 @ 48Mhz</p>
     </div>
-
-    <div class="step slide" data-x="1500" data-y="0" data-rotate="90">
-        <img src="img/uno.jpg">
-
-        <p>Arduino Uno - $32 - ATmega328 @ 16MHz </p>
+    <div class="step slide" data-x="2000" data-y="0" data-rotate="90">
+        <h1><img src="img/RPi.jpg"> RPi @ $35 ;)</h1>
     </div>
-
     <div class="step" data-x="2500" data-y="2400" data-scale="6">
-        <h1>Lets see some awesome projects for the RPi...</h1>
+        <h1>OK, Lets see some awesome projects for the RPi...</h1>
     </div>
 
-    <div class="step slide" data-x="3500" data-y="0" data-scale="1">
+    <div class="step slide" data-x="3500" data-y="3000" data-scale="1">
         <h3>FishPi</h3>
 
         <p><img src="img/FishPi.jpg"></p>
         <span class="footnote">http://fishpi.org/</span>
     </div>
 
-    <div class="step slide" data-x="5500" data-y="2500" data-scale="1">
+    <div class="step slide" data-x="5500" data-y="3000" data-scale="1">
         <h3>Pi in the sky</h3>
 
         <p><img src="img/pi_balloon.jpg"></p>
         <span class="footnote">http://www.daveakerman.com/ RPi @ 39,994m</span>
     </div>
 
-    <div class="step slide" data-x="6000" data-y="3000" data-scale="1">
+    <div class="step slide" data-x="7500" data-y="3000" data-scale="1">
         <h3>disaster relief drone</h3>
-
         <p>
             <img src="img/openrelief_drone.jpg">
             <img src="img/openrelief_road_study.jpg">
@@ -131,14 +124,24 @@
         <span class="footnote">http://openrelief.org/ </span>
     </div>
 
+    <div class="step slide" data-x="9500" data-y="3000" data-scale="1">
+        <h3>Ethernet Line Tap</h3>
+        <p>
+            <img src="img/etherlogger.jpg">
+        </p>
+        <p style="font-family: monospace;">
+            :# apt-get install bridge-utils tcpdump
+        </p>
+        <span class="footnote">http://www.irongeek.com/i.php?page=security/raspberry-pi-recipes</span>
+    </div>
+
     <div class="step slide" data-x="6500" data-y="3500" data-scale="1">
         <h4>Other Projects</h4>
-
         <p>
         <ul>
             <li>XBMC Media center</li>
             <li>MAME Old school games</li>
-            <li>PABX cheap AVR</li>
+            <li>PABX cheap AVR - Asterisk</li>
             <li>Thin clients</li>
             <li>Weather stations</li>
             <li>Internet Radio</li>
@@ -151,14 +154,49 @@
         </ul>
         </p>
     </div>
+    <div class="step slide" data-x="500" data-y="500" data-scale="1" data-rotate="180">
+        <h1>Support for .NET?</h1>
+        <p><img src="img/Mono_project_logo.png"/></p>
+        <p> <strong>The RPi Supports the <em>Full Mono framework!</em></strong>
+        </p>
+        <p>
+            <q>
+                The easiest way to describe what Mono currently supports is:</br>
+                Everything in .NET 4.0 except WPF, EntityFramework and WF, limited WCF.
+            </q>
+
+        </p>
+         <span class="footnote">http://www.mono-project.com/Compatibility</span>
+    </div>
+    <div class="step slide" data-x="-500" data-y="-500" data-scale="1" data-rotate="180">
+        <h3>General Purpose Input/Output (GPIO)</h3>
+        <p>
+            <img src="img/GPIOs.png"/>
+        </p>
+
+        <span class="footnote">https://github.com/Stonie/RaspberryPi.Net</span>
+    </div>
+
+
+    <div class="step slide" data-x="6000" data-y="3000" data-scale="1">
+
+        <p>
+            <img src="img/ShowMeTheCode.jpg"/>
+        </p>
+
+    </div>
 
 
     <div class="step slide" data-x="6300" data-y="2000" data-rotate="20" data-scale="8">
         <h1>Questions?</h1>
     </div>
-
-    <div class="step slide thanks" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10"
-         data-scale="2">
+    <div class="step slide" data-x="7300" data-y="2000" data-rotate="20" data-scale="8">
+        <p>
+            <img src="img/OzBerryPi.png">
+        </p>
+        <p>Come and join Sydney's RPi User Group: <a href="http://www.ozberrypi.org">http://www.ozberrypi.org</a></p>
+    </div>
+    <div class="step slide thanks" data-x="6200" data-y="4300" data-scale="2">
         <h2>Thank you!</h2>
 
         <P>&nbsp</P>
@@ -182,8 +220,13 @@
 
         <p>
             <i class="icon-github-sign icon-large"></i>
+            <a href="https://github.com/Stonie">
+                https://github.com/Stonie
+            </a>
+        </p>
+        <p>
+            <i class="icon-github-sign icon-large"></i>
             <a href="https://github.com/DrivenLogic">
-
                 https://github.com/drivenlogic
             </a>
         </p>
@@ -214,6 +257,8 @@
 </div>
 
 </div>
+
+<div title="OzberryPi.org" id="badge"></div>
 <script src="js/impress.js"></script>
 <script>impress().init();</script>
 
@@ -241,6 +286,5 @@
     is used in event handlers.
     
 -->
-
 </body>
 </html>
